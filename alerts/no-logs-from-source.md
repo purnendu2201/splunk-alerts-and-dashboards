@@ -1,6 +1,5 @@
-```md
 # No Logs From Source Alert
-```
+
 ### 🎯 Purpose
 
 Detect when a critical source stops sending logs in Splunk.
