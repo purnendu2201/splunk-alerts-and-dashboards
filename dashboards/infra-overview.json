@@ -1,1 +1,22 @@
+**beginner-friendly, simple** dashboard example:
+
+```json
+{
+  "title": "Infrastructure Overview Dashboard",
+  "description": "Basic infra monitoring panels for CPU, memory, and error counts.",
+  "visualizations": [
+    {
+      "panel_title": "CPU Usage",
+      "search": "index=your_index sourcetype=cpu_usage | timechart avg(cpu) by host"
+    },
+    {
+      "panel_title": "Memory Usage",
+      "search": "index=your_index sourcetype=memory_usage | timechart avg(mem_used) by host"
+    },
+    {
+      "panel_title": "HTTP Error Rate",
+      "search": "index=your_index status>=500 status<600 | timechart count"
+    }
+  ]
+}
 
