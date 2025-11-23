@@ -7,15 +7,6 @@ All examples are **safe**, **generic**, and **not based on real customer data**.
 
 ---
 
-## 📂 Repository Structure
-
-
-splunk-alerts-and-dashboards/
-
-<n>├── alerts/ </n>
-<n>└── dashboards/ </n>
-
-
 ### **alerts/**
 Contains alert use cases such as:
 - High error rate detection  
