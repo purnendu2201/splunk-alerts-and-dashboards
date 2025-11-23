@@ -1,0 +1,20 @@
+json
+
+{
+  "title": "Application Latency Dashboard",
+  "description": "Monitor application response times and error trends.",
+  "visualizations": [
+    {
+      "panel_title": "Average Response Time",
+      "search": "index=your_index sourcetype=your_app_logs | timechart avg(response_time)"
+    },
+    {
+      "panel_title": "95th Percentile Latency",
+      "search": "index=your_index sourcetype=your_app_logs | timechart perc95(response_time)"
+    },
+    {
+      "panel_title": "Error Count Over Time",
+      "search": "index=your_index status>=500 status<600 | timechart count"
+    }
+  ]
+}
