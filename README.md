@@ -12,7 +12,9 @@ All examples are **safe**, **generic**, and **not based on real customer data**.
 
 
 splunk-alerts-and-dashboards/
+
 ├── alerts/
+
 └── dashboards/
 
 
