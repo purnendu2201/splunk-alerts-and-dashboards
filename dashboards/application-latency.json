@@ -1,5 +1,3 @@
-json
-
 {
   "title": "Application Latency Dashboard",
   "description": "Monitor application response times and error trends.",
