@@ -1,4 +1,3 @@
-📘 README.md 
 # Splunk Alerts and Dashboards
 
 This repository contains **example alert definitions** and **dashboard JSON samples** that demonstrate how I approach monitoring in Splunk Cloud and Splunk Enterprise.
