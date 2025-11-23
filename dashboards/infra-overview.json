@@ -1,6 +1,6 @@
 **beginner-friendly, simple** dashboard example:
 
-```json
+``json``
 {
   "title": "Infrastructure Overview Dashboard",
   "description": "Basic infra monitoring panels for CPU, memory, and error counts.",
@@ -19,4 +19,5 @@
     }
   ]
 }
+
 
