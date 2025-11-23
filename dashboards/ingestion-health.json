@@ -1,0 +1,18 @@
+{
+  "title": "Ingestion Health Dashboard",
+  "description": "Monitor log volume, missing data, and ingestion delays.",
+  "visualizations": [
+    {
+      "panel_title": "Events Per Minute",
+      "search": "index=your_index | bin _time span=1m | stats count by _time"
+    },
+    {
+      "panel_title": "Ingestion Latency",
+      "search": "index=_internal sourcetype=metrics group=pipeline | timechart avg(exec_time)"
+    },
+    {
+      "panel_title": "Hosts Sending No Logs",
+      "search": "metadata type=hosts | where lastTime < relative_time(now(), \"-1h\")"
+    }
+  ]
+}
